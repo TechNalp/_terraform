@@ -1,0 +1,8 @@
+*.tfstate
+*.tfvars
+*.tfstate.backup
+*.terraform.lock.hcl
+
+.vscode
+
+private_key.json

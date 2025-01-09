@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  labels:
+    app: seed-job
+  name: seed-job
+spec:
+  template:
+    spec:
+      containers:
+        - image: us-central1-docker.pkg.dev/steam-circlet-442814-e1/terraform/seed
+          name: seed-job
+          env:
+            - name: TARGET_HOST
+              value: "vote"
+            - name: TARGET_PORT
+              value: "5000"
+      restartPolicy: Never

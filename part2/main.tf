@@ -22,9 +22,20 @@ module "docker" {
 }
 
 
+module "gcp" {
+  source = "../modules/gcp"
+
+  project_id = var.project_id
+  private_key_location = var.private_key_location
+  region = var.region
+  zone = var.zone
+}
+
+
 module "k8s" {
   source = "../modules/k8s"
 
+  count = var.create_k8s ? 1 : 0
   project_id = var.project_id
   private_key_location = var.private_key_location
   region = var.region
@@ -34,4 +45,6 @@ module "k8s" {
   pvc_manifest = var.pvc_manifest
   deployment_manifests = var.deployment_manifests
   service_manifests = var.service_manifests
+  
+
 }

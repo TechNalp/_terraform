@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"docker","Source":"../modules/docker","Dir":"../modules/docker"},{"Key":"k8s","Source":"../modules/k8s","Dir":"../modules/k8s"},{"Key":"k8s.gcp","Source":"../gcp","Dir":"../modules/gcp"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"docker","Source":"../modules/docker","Dir":"../modules/docker"},{"Key":"gcp","Source":"../modules/gcp","Dir":"../modules/gcp"},{"Key":"k8s","Source":"../modules/k8s","Dir":"../modules/k8s"},{"Key":"k8s.gcp","Source":"../gcp","Dir":"../modules/gcp"}]}

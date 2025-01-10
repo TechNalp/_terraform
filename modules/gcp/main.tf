@@ -13,3 +13,4 @@ resource "google_container_cluster" "cluster" {
 }
 
 data "google_client_config" "default" {}
+

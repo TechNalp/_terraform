@@ -18,6 +18,10 @@ variable "private_key_location" {
   type = string
 }
 
+variable "create_k8s" {
+  type    = bool
+  default = false
+}
 
 variable "access_token_target_service_account" {
   description = "service account email who will be get access token"

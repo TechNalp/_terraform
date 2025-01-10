@@ -2,7 +2,7 @@
 *.tfvars
 *.tfstate.backup
 *.terraform.lock.hcl
-
+.DS_STORE
 .vscode
 
 private_key.json
